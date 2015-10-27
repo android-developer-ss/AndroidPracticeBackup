@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
     //**********************************************************************************************
     public void sendMessage(View view) {
+		//without adding listner.. directly from button onclick property.
         Intent intent = new Intent(this, Main2Activity.class);
         EditText editText = (EditText) findViewById(R.id.edittext);
         String message = editText.getText().toString();
