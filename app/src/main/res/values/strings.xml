@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AllButtonsSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="toggle_turn_on">Turn On</string>
+    <string name="toggle_turn_off">Turn Off</string>
+    <string name="btn_display">Display</string>
+    <string name="example_edittext">Example showing EditText</string>
+    <string name="show_the_text">Show the Text</string>
+    <string name="enter_text">text changes</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="nextscreen">Next Screen</string>
+</resources>
