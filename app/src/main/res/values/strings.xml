@@ -14,4 +14,8 @@
     <string name="title_activity_radio_button_sample">RadioButtonSample</string>
     <string name="spinnersPage">Spinner Sample</string>
     <string name="radioButtonPageName">Radio Button Sample</string>
+    <string name="title_activity_overflow_menu">OverflowMenu</string>
+
+    <string name="red_string">Red screen</string>
+    <string name="overflowMenuSample">OverFlow Example</string>
 </resources>

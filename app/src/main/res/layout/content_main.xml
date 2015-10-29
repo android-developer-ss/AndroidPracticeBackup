@@ -73,6 +73,13 @@
         android:layout_gravity="center_horizontal|center"
         android:text="@string/radioButtonPageName"
         android:onClick="openRadioButtonActivity"/>
+    <Button
+        android:id="@+id/overflowMenuScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/overflowMenuSample"
+        android:onClick="openOverflowActivity"/>
 
 
 </LinearLayout>

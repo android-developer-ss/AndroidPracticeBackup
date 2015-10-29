@@ -109,12 +109,18 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.edittext);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-       startActivity(intent);
+        startActivity(intent);
     }
     //**********************************************************************************************
     public void openRadioButtonActivity(View view) {
         //without adding listner.. directly from button onclick property.
         Intent intent = new Intent(this, RadioButtonSample.class);
+        startActivity(intent);
+    }
+    //**********************************************************************************************
+    public void openOverflowActivity(View view) {
+        //without adding listner.. directly from button onclick property.
+        Intent intent = new Intent(this, OverflowMenu.class);
         startActivity(intent);
     }
 }
