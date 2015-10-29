@@ -63,9 +63,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center"
-        android:text="@string/nextscreen"
+        android:text="@string/spinnersPage"
         android:onClick="sendMessage"/>
 
+    <Button
+        android:id="@+id/radioButtonScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="@string/radioButtonPageName"
+        android:onClick="openRadioButtonActivity"/>
 
 
 </LinearLayout>

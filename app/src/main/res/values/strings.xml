@@ -11,4 +11,7 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="nextscreen">Next Screen</string>
     <string name="title_activity_second_screen">SecondScreen</string>
+    <string name="title_activity_radio_button_sample">RadioButtonSample</string>
+    <string name="spinnersPage">Spinner Sample</string>
+    <string name="radioButtonPageName">Radio Button Sample</string>
 </resources>
