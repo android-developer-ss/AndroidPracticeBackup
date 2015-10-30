@@ -123,4 +123,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, OverflowMenu.class);
         startActivity(intent);
     }
+
+    //**********************************************************************************************
+    public void openLongClick(View view) {
+        //without adding listner.. directly from button onclick property.
+        Intent intent = new Intent(this, LongClick.class);
+        startActivity(intent);
+    }
+
+    //**********************************************************************************************
+    public void openDragAndDrop(View view) {
+        //without adding listner.. directly from button onclick property.
+        Intent intent = new Intent(this, DragActivity.class);
+        startActivity(intent);
+    }
+
 }

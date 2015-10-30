@@ -1,85 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton1"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
-        android:text="ToggleButton" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
-        android:textOn="@string/toggle_turn_on"
-        android:textOff="@string/toggle_turn_off"
-        android:checked="true" />
-
-    <Button
-        android:id="@+id/btnDisplay"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
-        android:text="@string/btn_display" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ocean2" />
 
     <TextView
         android:id="@+id/textView1"
+        android:layout_marginTop="5pt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
         android:text="@string/example_edittext" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
-        android:text="@string/show_the_text" />
 
     <EditText
         android:id="@+id/edittext"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal|center"
         android:ems="10"
         android:text="@string/enter_text"
-        android:inputType="text" />
+        android:inputType="text"
+        android:layout_below="@id/textView1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_the_text"
+        android:layout_below="@id/edittext"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:layout_below="@+id/button"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:textOn="@string/toggle_turn_on"
+        android:textOff="@string/toggle_turn_off"
+        android:checked="true"
+        android:layout_toRightOf="@+id/toggleButton1"
+        android:layout_alignTop="@+id/toggleButton1"/>
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_display"
+        android:layout_below="@id/toggleButton1"/>
+
     <Button
         android:id="@+id/nextscreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
         android:text="@string/spinnersPage"
-        android:onClick="sendMessage"/>
+        android:onClick="sendMessage"
+        android:layout_below="@id/btnDisplay"/>
 
     <Button
         android:id="@+id/radioButtonScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
         android:text="@string/radioButtonPageName"
-        android:onClick="openRadioButtonActivity"/>
+        android:onClick="openRadioButtonActivity"
+        android:layout_below="@id/nextscreen"/>
+
     <Button
         android:id="@+id/overflowMenuScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center"
         android:text="@string/overflowMenuSample"
-        android:onClick="openOverflowActivity"/>
+        android:onClick="openOverflowActivity"
+        android:layout_below="@id/radioButtonScreen"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long click"
+        android:id="@+id/clickEvents"
+        android:onClick="openLongClick"
+        android:layout_below="@id/overflowMenuScreen"/>
 
 
-</LinearLayout>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drag and Drop"
+        android:id="@+id/clickdraganddrop"
+        android:onClick="openDragAndDrop"
+        android:layout_below="@id/clickEvents"/>
+</RelativeLayout>

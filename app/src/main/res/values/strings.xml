@@ -18,4 +18,8 @@
 
     <string name="red_string">Red screen</string>
     <string name="overflowMenuSample">OverFlow Example</string>
+    <string name="title_activity_long_click">LongClick</string>
+    <string name="title_activity_drag_and_drop">DragAndDrop</string>
+    <string name="dragtext">Drag me ;)</string>
+    <string name="title_activity_drag">DragActivity</string>
 </resources>

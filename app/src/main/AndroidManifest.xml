@@ -41,6 +41,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.snehal.allbuttonssample.MainActivity" />
         </activity>
+        <activity
+            android:name=".LongClick"
+            android:label="@string/title_activity_long_click"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DragAndDrop"
+            android:label="@string/title_activity_drag_and_drop"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DragActivity"
+            android:label="@string/title_activity_drag"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>
